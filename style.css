@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Light grey background for better contrast */
+}
+
+header {
+    background-color: #007bff; /* A strong blue for a professional look */
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .profile-info {
+    text-align: center;
+    padding: 2em 0;
+}
+
+header .profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+header .social-links a {
+    margin-right: 1em;
+    color: white; /* White color for better visibility against blue */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+section {
+    padding: 5em 1em 1em;
+    margin-top: 100px;
+}
+
+section.active {
+    display: block;
+}
+
+#home {
+    background: url('background.jpeg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #007bff; /* Matching button color with the header */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover for button */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+}
+
+.project-card, .experience-item {
+    background: #ffffff; /* White background for content cards for cleanliness */
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Adding subtle shadows for depth */
+}
+
+footer {
+    background-color: #007bff; /* Footer matches the header */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
